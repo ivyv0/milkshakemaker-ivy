@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: lightgreen;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+header h1 img{
+    width: 20em;
+    align-items: center;
+  
+}
+
+
+main section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+main section:nth-of-type(1) > img { 
+    width: 30em;
+    height: 20%;
+
+}
+
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+.options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  
+}
+
+.options img {
+    width: 10em;
+
+}
+button {
+    background: #eee;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: lightcoral;
+    color: #fff;
+    border-color: lightcoral;
+}
+
+button:active {
+    background: #b02467;
+}
+
+.result {
+    text-align: center;
+}
+
+.shake {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #d63384;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.shake p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+#blend-shake {
+    padding: 10px 20px;
+    background: #d63384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#blend-shake:hover {
+    background: #b02467;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+    color: black;
+}
+
+.reload {
+    background-color: #ff8c94;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reload:hover {
+    background-color: #ff6c74;
+}

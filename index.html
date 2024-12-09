@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkshake Maker</title>
+    <link rel="icon" href="img/milkshakelogo.png" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> 
+            <img src="img/logomilkshake.png" alt="logo van milkshake maker">
+        </h1>
+        
+    </header>
+    <main>
+        <section class="result">
+            <h2>Jouw Milkshake</h2>
+            <div class="shake">
+                <p id="shake-text">Kies eerst een smaak en toppings!</p>
+            </div>
+            <img src="/img/milkshake.png" alt="aardbei smaak"> 
+            <button id="blend-shake">Blend</button>
+        </section>
+        <section class="flavors">
+            <h2>Kies een smaak</h2>
+            <div class="options">
+                <button class="flavor">Aardbei <img src="/img/aardbei.png" alt="aardbei smaak"> </button>
+                <button class="flavor"> Chocolade <img src="/img/chocolade.png" alt="chocolade smaak"> </button>
+                <button class="flavor"> Vanille <img src="/img/vanilla.png" alt="vanille smaak">  </button>
+            </div>
+        </section>
+        <section class="toppings">
+            <h2>Kies je toppings</h2>
+            <div class="options">
+                <button class="topping">Blauwe bessen <img src="/img/blauwebessen.png" alt="blauwebessen topping"> </button>
+                <button class="topping">Aardbei <img src="/img/aardbeitopping.png" alt="aardbei topping "> </button>
+                <button class="topping">Slagroom <img src="/img/slagroom.png" alt="sslagroom topping"> </button>
+                <button class="topping"> Sprinkles <img src="/img/sprinkle.png" alt="sprinkles topping"> </button>
+            </div>
+        </section>
+        <button id="reload-button" class="reload">Opnieuw beginnen</button>
+
+    </main>
+    <audio id="success-sound" src="sound/successsoundeffect.mp3"></audio>
+    <footer>
+        <p>Gemaakt door Ivy 🍹</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- bronvermelding
+ successound: https://www.youtube.com/watch?v=nZPtUEaplkw -->
