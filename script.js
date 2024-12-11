@@ -9,7 +9,6 @@ const shakeImage = document.querySelector(".result img");
 const shakeSmaak = document.querySelector(".shake");
 const shakeTopping = document.querySelector(".shake1");
 
-    // Afbeeldingen voor smaken en toppings
     const flavorImages = {
         "Aardbei": "/img/aardbei.png",
         "Chocolade": "/img/chocolade.png",
