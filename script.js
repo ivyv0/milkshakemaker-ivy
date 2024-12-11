@@ -9,18 +9,18 @@ const shakeImage = document.querySelector(".result img");
 const shakeSmaak = document.querySelector(".shake");
 const shakeTopping = document.querySelector(".shake1");
 
-    const flavorImages = {
-        aardbei: "img/aardbei.png",
-        chocolade: "img/chocolade.png",
-        vanille: "img/vanilla.png"
-    };
+const flavorImages = {
+    aardbei: "./img/aardbei.png",
+    chocolade: "./img/chocolade.png",
+    vanille: "./img/vanilla.png"
+};
 
-    const toppingImages = {
-        blauwebessen: "img/blauwebessen.png",
-        aardbei: "img/aardbeitopping.png",
-        slagroom: "img/slagroom.png",
-        sprinkles: "img/sprinkle.png"
-    };
+const toppingImages = {
+    blauwebessen: "./img/blauwebessen.png",
+    aardbei: "./img/aardbeitopping.png",
+    slagroom: "./img/slagroom.png",
+    sprinkles: "./img/sprinkle.png"
+};
 
     // flav img.aardbei
     let flavor = null; 
