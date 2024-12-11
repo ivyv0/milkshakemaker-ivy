@@ -24,7 +24,7 @@ const toppingImages = {
 
     // flav img.aardbei
     let flavor = null; 
-    let topping = false; // Houd bij of een topping is gekozen
+    let topping = false; 
 
     flavorButtons.forEach(button => {
         button.addEventListener('click', function() {
