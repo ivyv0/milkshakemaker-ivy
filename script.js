@@ -10,16 +10,16 @@ const shakeSmaak = document.querySelector(".shake");
 const shakeTopping = document.querySelector(".shake1");
 
 const flavorImages = {
-    aardbei: "./img/aardbei.png",
-    chocolade: "./img/chocolade.png",
-    vanille: "./img/vanilla.png"
+    aardbei: "img/aardbei.png",
+    chocolade: "img/chocolade.png",
+    vanille: "img/vanilla.png"
 };
 
 const toppingImages = {
-    blauwebessen: "./img/blauwebessen.png",
-    aardbei: "./img/aardbeitopping.png",
-    slagroom: "./img/slagroom.png",
-    sprinkles: "./img/sprinkle.png"
+    blauwebessen: "img/blauwebessen.png",
+    aardbei: "img/aardbeitopping.png",
+    slagroom: "img/slagroom.png",
+    sprinkles: "img/sprinkle.png"
 };
 
     // flav img.aardbei
