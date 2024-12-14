@@ -29,6 +29,7 @@ const shakeSmaak = document.querySelector(".shake");
 const shakeTopping = document.querySelector(".shake1");
 
 
+
 function showElement(element) {
     element.classList.remove('flavor1', 'flavor2', 'flavor3', 'topping1', 'topping2', 'topping3', 'topping4');
 }
@@ -99,8 +100,8 @@ const shakeStatus = document.getElementById("shake-status");
 
 
   
-let flavor = null; 
-let topping = false; 
+let flavor = ""; 
+let topping = ""; 
     
 blendButton.addEventListener('click', function() {
         if (!flavor) {
