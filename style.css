@@ -57,10 +57,27 @@ h2 {
   
 }
 
+
+.flavor1, .flavor2, .flavor3 {
+    display: none;
+}
+
+
+.topping1, .topping2, .topping3, .topping4 {
+    display: none;
+}
+
+
 .options img {
     width: 10em;
 
 }
+
+.options-hidden img {
+    width: 10em;
+
+}
+
 button {
     background: #eee;
     padding: 10px 15px;
