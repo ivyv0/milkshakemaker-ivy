@@ -97,6 +97,7 @@ toppingSp.addEventListener('click', function() {
 const blendButton = document.getElementById("blend-shake");
 const successSound = document.getElementById("success-sound");
 const shakeStatus = document.getElementById("shake-status");
+const blendSound = document.getElementById("blend-sound");
 
 
   
@@ -113,12 +114,17 @@ blendButton.addEventListener('click', function() {
             shakeStatus.style.color = "orange";
             shakeStatus.style.fontSize = "1.5em";
         } else {
-            successSound.play();
+            blendSound.play();
             setTimeout(function() {
-                shakeStatus.textContent = "Bedankt voor je bestelling! 😊";
+                blendSound.pause();  
+                blendSound.currentTime = 0;  
+            }, 2000); 
+            setTimeout(function() {
+                successSound.play(); 
+                shakeStatus.textContent = "Je milkshake is klaar! 😊";
                 shakeStatus.style.color = "green";
                 shakeStatus.style.fontSize = "2em";
-            }, 1000);
+            }, 2000); 
         }
     });
   
