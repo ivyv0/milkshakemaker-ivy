@@ -100,7 +100,7 @@ const shakeStatus = document.getElementById("shake-status");
 
   
 let flavor = null; 
-let topping = null; 
+let topping = false; 
     
 blendButton.addEventListener('click', function() {
         if (!flavor) {

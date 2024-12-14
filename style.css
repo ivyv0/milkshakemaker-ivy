@@ -60,11 +60,13 @@ h2 {
 
 .flavor1, .flavor2, .flavor3 {
     display: none;
+    visibility: hidden;
 }
 
 
 .topping1, .topping2, .topping3, .topping4 {
     display: none;
+    visibility: hidden;
 }
 
 
@@ -74,7 +76,7 @@ h2 {
 }
 
 .options-hidden img {
-    width: 10em;
+    width: 5em;
 
 }
 
