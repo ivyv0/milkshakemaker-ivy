@@ -43,7 +43,7 @@ flavorStraw.addEventListener('click', function() {
         flavor = "Aardbei";
         shakeText.textContent = "Je hebt " + flavor + " gekozen!";
     } else {
-        alert("Je mag maar 1 smaak kiezen!");
+        shakeText.textContent = "Je mag maar 1 smaak kiezen!";
     }
 });
 
@@ -54,7 +54,7 @@ flavorCho.addEventListener('click', function() {
         flavor = "Chocolade";
         shakeText.textContent = "Je hebt " + flavor + " gekozen!";
     } else {
-        alert("Je kan maar 1 smaak kiezen!");
+        shakeText.textContent = "Je mag maar 1 smaak kiezen!";
     }
 });
 
@@ -65,7 +65,7 @@ flavorVan.addEventListener('click', function() {
         flavor = "Vanille";
         shakeText.textContent = "Je hebt " + flavor + " gekozen!";
     } else {
-        alert("Je kan maar 1 smaak kiezen!");
+        shakeText.textContent = "Je mag maar 1 smaak kiezen!";
     }
 });
 
@@ -95,42 +95,44 @@ toppingSp.addEventListener('click', function() {
 
 
 const blendButton = document.getElementById("blend-shake");
-const successSound = document.getElementById("success-sound");
+// const successSound = document.getElementById("success-sound");
 const shakeStatus = document.getElementById("shake-status");
-const blendSound = document.getElementById("blend-sound");
+// const blendSound = document.getElementById("blend-sound");
 
 
   
 let flavor = ""; 
 let topping = ""; 
-    
+
+const successSound = new Audio('sound/successsoundeffect.mp3');
+const blendSound = new Audio('sound/blendersound.mp3');
+ 
 blendButton.addEventListener('click', function() {
+     shakeStatus.classList.remove('error', 'warning', 'success');
+    
         if (!flavor) {
             shakeStatus.textContent = "Je moet eerst een smaak kiezen!";
-            shakeStatus.style.color = "red";
-            shakeStatus.style.fontSize = "1.5em";
+            shakeStatus.classList.add('error'); 
         } else if (!topping) {
             shakeStatus.textContent = "Je hebt geen topping gekozen.";
-            shakeStatus.style.color = "orange";
-            shakeStatus.style.fontSize = "1.5em";
+            shakeStatus.classList.add('warning'); 
         } else {
             blendSound.play();
             setTimeout(function() {
-                blendSound.pause();  
-                blendSound.currentTime = 0;  
-            }, 2000); 
+                blendSound.pause();
+                blendSound.currentTime = 0;
+            }, 2000);
             setTimeout(function() {
-                successSound.play(); 
+                successSound.play();
                 shakeStatus.textContent = "Je milkshake is klaar! 😊";
-                shakeStatus.style.color = "green";
-                shakeStatus.style.fontSize = "2em";
-            }, 2000); 
+                shakeStatus.classList.add('success'); 
+            }, 2000);
         }
     });
-  
-    const reloadButton = document.getElementById("reload-button");
 
-    reloadButton.addEventListener('click', function() {
+const reloadButton = document.getElementById("reload-button");
+
+reloadButton.addEventListener('click', function() {
         window.location.reload();
     });
 

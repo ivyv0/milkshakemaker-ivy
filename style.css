@@ -169,3 +169,21 @@ footer {
 .reload:hover {
     background-color: #ff6c74;
 }
+
+
+.error {
+    color: red;
+    font-size: 1.5em;
+}
+
+
+.warning {
+    color: orange;
+    font-size: 1.5em;
+}
+
+
+.success {
+    color: green;
+    font-size: 2em;
+}
